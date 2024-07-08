@@ -1,25 +1,41 @@
 {
   "expo": {
-    "name": "react-first",
-    "slug": "react-first",
+    "name": "Spot",
+    "slug": "Spot",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
+    "icon": "./assets/images/spot.png",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/spot.png",
+      "backgroundColor": "#1E3B2F",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "imageResizeMode": "contain",
+      "android": {
+        "backgroundColor": "#1E3B2F",
+        "resizeMode": "cover",
+        "xxhdpi": "./assets/images/spot.png",
+        "xxxhdpi": "./assets/images/spot.png"
+      },
+      "ios": {
+        "backgroundColor": "#1E3B2F",
+        "resizeMode": "contain",
+        "xxhdpi": "./assets/images/spot.png",
+        "xxxhdpi": "./assets/images/spot.png"
+      }
     },
+    "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "scheme": "spot",
+      "bundleIdentifier": "com.haider434.Spot"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/images/spot.png",
+        "backgroundColor": "#1E3B2F"
+      },
+      "scheme": "spot",
+      "package": "com.haider434.Spot"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +47,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "5f5441a2-67d8-4327-820c-90f674e2bad6"
+      }
     }
   }
 }
